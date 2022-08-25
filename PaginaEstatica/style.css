@@ -1,0 +1,99 @@
+.titulo{
+color: #AEA26A;
+text-align: left;
+padding: 30px;
+font-family: 'Oswald', sans-serif;
+font-size: 50px;
+}
+.row .col{
+padding:10px;
+width: auto;
+}
+.subtitulos{
+font-size: 18px;
+text-align: center;
+width: 200px;
+color: #AEA26A;
+font-family: 'Oswald', sans-serif;
+}
+.texto{
+font-size: 14px;
+margin-top: 10px;
+text-align: center;
+width: 200px;
+color: white;
+font-family: 'Montserrat', sans-serif;
+}
+.imagem_hab{
+margin-left: 75px;
+height: 50px;
+width: 50px;
+align: center;
+}
+.paragrafo{
+padding: 20px;
+color: white;
+font-family: 'Oswald', sans-serif;
+font-size: 30px;
+margin-left: 20px;
+}
+.habilidade{
+background-color: #333333;
+height: auto;
+}
+#row2{
+margin-left: 50px;
+width: auto;
+}
+#row3{
+margin-left: 100px;
+width: auto;
+}
+/* Adicionais para arquivo de Areas de atuação.*/
+/* Areas de atuação -> aat*/
+.areasatuac{
+    background-color: rgb(30, 50, 76);
+    height: auto;
+    }
+
+.colunin{
+    padding:10px;
+    width: 30%;
+}
+
+.imagem_aat_titulo{
+margin-right: 15px;
+height: 30px;
+width: 30px;
+align: center;
+}
+.imagem_aat{
+    position: relative;
+    left: 50%;
+    height: 30px;
+    width: 30px;
+}
+.subtitulos_aat{
+    font-size: 18px;
+    text-align: center;
+    width: auto;
+    color: #b9450f;
+    font-family: 'Oswald', sans-serif;
+}
+.texto_aat{
+    font-size: 14px;
+    margin-top: 3px;
+    text-align: center;
+    width: auto;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+.texto_list{
+    font-size: 12px;
+    margin-top: 5px;
+    text-align: left;
+    width: auto;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
