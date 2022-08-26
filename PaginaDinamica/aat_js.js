@@ -101,6 +101,16 @@ const atributo3 = document.getElementById("atrib3Cargo");
 const btnAnt = document.querySelector(".btn_ant")
 const btnPrx = document.querySelector(".btn_prx")
 
+const btnAna = document.querySelector(".btnCargAna")
+const btnEsp = document.querySelector(".btnCargEsp")
+const btnAud = document.querySelector(".btnCargAud")
+const btnEng = document.querySelector(".btnCargEng")
+const btnCon = document.querySelector(".btnCargCon")
+const btnAdm = document.querySelector(".btnCargAdm")
+const btnArq = document.querySelector(".btnCargArq")
+const btnGer = document.querySelector(".btnCargGer")
+const btnDir = document.querySelector(".btnCargDir")
+
 const areaShow = document.getElementById("dsp")
 
 let currentItem = 2;
@@ -108,10 +118,10 @@ let currentItem = 2;
 window.addEventListener('DOMContentLoaded', function(){
     carregarCargo();
 });
-areaShow.onmouseout = function() {move(true)};
-//areaShow.addEventListener('mouseout',function(){
-//    move(true)
-//});
+//areaShow.onload = function() {move(true)};
+areaShow.addEventListener('mouseout',function(){
+    move(true)
+});
 areaShow.addEventListener('mouseover', function(){
     move(false)
 });
@@ -127,6 +137,44 @@ function carregarCargo(){
     atributo3.textContent = item.atrib1[2];
 }
 
+btnAna.addEventListener('click', function(){
+    currentItem = 0;
+    carregarCargo(currentItem);
+});
+btnEsp.addEventListener('click', function(){
+    currentItem = 1;
+    carregarCargo(currentItem);
+});
+btnAud.addEventListener('click', function(){
+    currentItem = 2;
+    carregarCargo(currentItem);
+});
+btnEng.addEventListener('click', function(){
+    currentItem = 3;
+    carregarCargo(currentItem);
+});
+btnCon.addEventListener('click', function(){
+    currentItem = 4;
+    carregarCargo(currentItem);
+});
+btnAdm.addEventListener('click', function(){
+    currentItem = 5;
+    carregarCargo(currentItem);
+});
+btnArq.addEventListener('click', function(){
+    currentItem = 6;
+    carregarCargo(currentItem);
+});
+btnGer.addEventListener('click', function(){
+    currentItem = 7
+    carregarCargo(currentItem);
+});
+btnDir.addEventListener('click', function(){
+    currentItem = 8;
+    carregarCargo(currentItem);
+});
+
+
 btnAnt.addEventListener('click', function(){
     currentItem--;
     if (currentItem < 0) {
@@ -140,7 +188,7 @@ btnPrx.addEventListener('click', function(){
         currentItem = 0;
     }
     carregarCargo(currentItem);
-})
+});
 
 let bar_sts = 0;
 function move(status) {
