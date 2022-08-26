@@ -1,0 +1,57 @@
+
+.areasatuac{
+    background-color: rgb(128, 193, 246);
+    height: auto;
+    padding: 100px;
+    }
+
+.colunin{
+    padding:10px;
+    width: 30%;
+}
+
+.imagem_aat_titulo{
+margin-right: 15px;
+height: 30px;
+width: 30px;
+align: center;
+}
+.imagem_aat{
+    position: relative;
+    left: 50%;
+    height: 30px;
+    width: 30px;
+}
+.subtitulos_aat{
+    font-size: 18px;
+    text-align: center;
+    width: auto;
+    color: black;
+    font-family: 'Oswald', sans-serif;
+
+}
+.texto_aat{
+    font-size: 14px;
+    margin-top: 3px;
+    text-align: center;
+    width: auto;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+}
+.texto_list{
+    font-size: 12px;
+    margin-top: 5px;
+    text-align: left;
+    width: auto;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+}
+.Titulo{
+font-family: 'Oswald', sans-serif;
+}
+.paragrafo{
+color: black;
+font-size: 20px;
+margin-left:200px;
+}
+
