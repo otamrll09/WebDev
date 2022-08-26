@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-1BmE4kWBq78iYhF1dvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqy12QvZ6jIW3" crossorigin="anonymous" >
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <title>Conceitos Cibersegurança</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+<div class="Conceitos">
+    <h1 class="titulo"><strong> Conceitos Básicos em Cibersegurança </strong></h1> 
+    <BANNERAD><img class="imagem_conc3" name="bannerADrotator" style="float: right"</a></BANNERAD>
+    
+    <div>
+        <h1 class="subtitulo"><strong> O que é Cibersegurança?</strong></h1>
+        <p class="paragrafo2">A cibersegurança é uma área de atuação importante dentro da segurança da informação e representa apenas os ativos digitais como a proteção de rede, hardware, software, infraestrutura tecnológica 
+            e serviços tendo sua atuação direcionada aos dados e protegendo-os contra roubo ou danos, como servidores, dispositivos móveis, redes e aplicativos assim como sistemas da informação.</p>
+        <img class="imagem_conc" src="img01_conc.JPG" alt="Conceitos" style="float: right">
+        <h1 class="subtitulo"><strong> Quais as diferenças com relação à segurança da informação? </strong></h1>
+        
+    <script>
+        var bannerAD=new Array();
+        var bannerADlink=new Array();
+        var adNum=0;
+        
+        //Pode criar variaveis para usar mais de uma vez
+        var imagem1 = "img11_conc.jpg";
+        var imagem2 = "img12_conc.jpg";
+        var imagem3 = "img05_conc.jpg";
+        
+        bannerAD[0]="";// ou digitar diretamente em cada item o nome da imagem
+        bannerADlink[0]="";
+        bannerAD[1]=imagem2;
+        bannerADlink[1]="";
+        bannerAD[2]=imagem3;
+        bannerADlink[2]="";
+        bannerAD[3]=imagem1;
+        bannerADlink[3]="";
+        bannerAD[4]=imagem2;
+        bannerADlink[4]="";
+        bannerAD[5]=imagem3;
+        bannerADlink[5]="";
+        bannerAD[6]=imagem1;
+        bannerADlink[6]="";
+        bannerAD[7]=imagem2;
+        bannerADlink[7]="";
+        bannerAD[8]=imagem3;
+        bannerADlink[8]="";
+        bannerAD[9]=imagem1;
+        bannerADlink[9]="";
+        
+        var preloadedimages=new Array();
+        for (i=1;i<bannerAD.length;i++){
+        preloadedimages[i]=new Image();
+        preloadedimages[i].src=bannerAD[i];
+        }
+        function setTransition(){
+        if (document.all){
+        bannerADrotator.filters.revealTrans.Transition=Math.floor(Math.random()*23);
+        bannerADrotator.filters.revealTrans.apply();
+        }
+        }
+        function playTransition(){
+        if (document.all)
+        bannerADrotator.filters.revealTrans.play()
+        }
+        function nextAd(){
+        if(adNum<bannerAD.length-1)adNum++ ;
+        else adNum=0;
+        setTransition();
+        document.images.bannerADrotator.src=bannerAD[adNum];
+        playTransition();
+        theTimer=setTimeout("nextAd()", 3000);
+        }
+        function jump2url(){
+        jumpUrl=bannerADlink[adNum];
+        jumpTarget='_self';
+        if (jumpUrl != ''){
+        if (jumpTarget != '')window.open(jumpUrl,jumpTarget);
+        else location.href=jumpUrl;
+        }
+        }
+        function displayStatusMsg() { 
+        status=bannerADlink[adNum];
+        document.returnValue = true;
+        }
+        nextAd()
+        </script>
+        
+        <p class="paragrafo2">A segurança da informação é relacionada com proteção de um conjunto de informações,visando à proteção dos ativos da empresa como um todo. <br>
+             Dentre as atividades de segurança que estão contidas dentro desse termo, podemos citar: <br> <br>
+            • Gestão de pessoas: controle de acesso e distribuição de informação;<br>
+            • Políticas de segurança: criação de regras claras acerca do uso dos dados;<br>
+            • Segurança física: criação de barreiras que impeçam pessoas sem autorização de ter acesso a dados. </p>
+
+        <p class="paragrafo">Para trabalhar na área de Cibersegurança primeiramente é necessário conhecer os três pilares da Segurança da Informação: </p>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <section class="position_text_conf">
+                <button class="button" onclick="Confidencialidade()" id="btnLeiaMais1">Confidencialidade</button>
+                <div class="col" >
+                    <script type="text/javascript" src="script.js"></script>
+                    <p class="paragrafo2"><span id="pontos1">A Confidencialidade...</span> 
+                    <span id="mais1"><img class="imagem_conc2" src="img02_conc.JPG" alt="Conceitos" style="float: right"> A Confidencialidade tem a ver com a privacidade dos dados da organização e pode ser conceituada como a imposição de limites de acesso apenas às pessoas que têm autorização ou direito sobre a informação, tendo níveis de acesso estabelecidos
+                        aos colaboradores da organização, como visualização, editação e exclusão de dados. </span> </p>
+                </div>
+            </section>
+            <section class="position_text_integ">
+                <button class="button" onclick="Integridade()" id="btnLeiaMais2">Integridade</button>
+                <div class="col">
+                    <p class="paragrafo2"><span id="pontos2">A Integridade...</span> 
+                    <span id="mais2"><img class="imagem_conc2" src="img04_conc.JPG" alt="Conceitos" style="float: right">A Integridade é a garantia de que as informações manterão suas características originais com consistência e confiabilidade das informações
+                        e dos sistemas da empresa ao longo dos processos ou de seu ciclo de vida. <br> Caso precisem ser manipuladas apenas o proprietário dos dados pode fazer a alteração,
+                        caso haja interferência externa os dados podem estar corrompidos, comprometidos ou danificados. </span> </p>
+                </div>
+            </section>
+            <section class="position_text_disp">
+                <button class="button" onclick="Disponibilidade()" id="btnLeiaMais3">Disponibilidade</button>
+                <div class="col">
+                    <p class="paragrafo2"><span id="pontos3">A Disponibilidade...</span> 
+                    <span id="mais3"><img class="imagem_conc2" src="img03_conc.JPG" alt="Conceitos" style="float: right">A Disponibilidade está relacionada ao tempo e à acessibilidade que se tem dos dados e sistemas da empresa, ou seja, se eles podem ser consultados a qualquer momento pelos colaboradores
+                        garantindo que o sistema permanece sem quedas ou interrupções. </span> </p>
+                </div>
+            </section> 
+        </div>
+    </div>
+    <div> 
+        <br> <br>
+        <h1 class="paragrafo">Além dos pilares outros conceitos importantes para o setor de Cibersegurança são:</h1>
+              
+        <!--<h1 class="subtitulo">1. Confidencialidade</h1>
+        <p class="paragrafo2">A Confidencialidade tem a ver com a privacidade dos dados da organização e pode ser conceituada como a imposição de limites de acesso apenas às pessoas que têm autorização ou direito sobre a informação, tendo níveis de acesso estabelecidos
+             aos colaboradores da organização, como visualização, editação e exclusão de dados. </p>
+
+        <h1 class="subtitulo">2 . Disponibilidade</h1>
+        <p class="paragrafo2"> A Disponibilidade está relacionada ao tempo e à acessibilidade que se tem dos dados e sistemas da empresa, ou seja, se eles podem ser consultados a qualquer momento
+             pelos colaboradores garantindo que o sistema permanece sem quedas ou interrupções.</p>
+             
+        <h1 class="subtitulo">3. Integridade</h1>
+        <p class="paragrafo2">A integridade é a garantia de que as informações manterão suas características originais com consistência e confiabilidade das informações
+            e dos sistemas da empresa ao longo dos processos ou de seu ciclo de vida. <br> Caso precisem ser manipuladas apenas o proprietário dos dados pode fazer a alteração,
+             caso haja interferência externa os dados podem estar corrompidos, comprometidos ou danificados.</p> -->
+
+        <h1 class="subtitulo"><strong> 1. Firewall</strong></h1>
+        <img class="imagem_conc5" src="img08_conc.JPG" alt="Conceitos" style="float: right">
+        <p class="paragrafo2"> A tecnologia de firewall é a primeira e principal proteção de uma empresa contra ataques cibernéticos, 
+            funcionando como um filtro que controla o fluxo de dados entre a rede externa e as máquinas da organização 
+            e decide permitir ou bloquear tráfegos de rede específicos de acordo com um conjunto definido de regras de segurança.</p>
+
+        <h1 class="subtitulo"><strong> 2. Ataques de negação de serviço</strong></h1>
+        <img class="imagem_conc5" src="img07_conc.JPG" alt="Conceitos" style="float: right">
+        <p class="paragrafo2">O ataque do tipo DoS (Denial Of Service), ou ataques de negação de serviço, utilizam sistemas especialistas que fazem milhares de requisições a um servidor ao mesmo tempo,
+            derrubando o serviço e deixando-o offline por meio de uma sobrecarga.</p>
+            
+        <h1 class="subtitulo"><strong> 3. Criptografia</strong></h1>
+        <img class="imagem_conc4" src="img06_conc.JPG" alt="Conceitos" style="float: right"> 
+        <p class="paragrafo2">A criptografia é uma técnica que tem como objetivo evitar o acesso indesejado de pessoas sem autorização à leitura de determinadas informações e manter a confidencialidade
+             dos dados usando de determinados esquemas matemáticos e algoritmos para codificar a informação em textos inelegíveis. </p>
+              
+        <h1 class="subtitulo"><strong> 4. Assinatura digital</strong></h1>
+        <p class="paragrafo2">A assinatura digital funciona como um método de criptografia, mas o seu objetivo é encriptar documentos e arquivos com uma identificação única que possa garantir a sua autenticidade perante os usuários.</p>
+             
+        <h1 class="subtitulo"><strong> 5. Defesa em profundidade</strong></h1>
+        <p class="paragrafo2">Defesa em profundidade é ter muitas linhas de defesa para proteger de uma forma de ataque. </p>
+        
+        <h1 class="subtitulo"><strong> 6. Políticas, Padrões, Procedimentos e Diretrizes</strong></h1>
+        <p class="paragrafo2">• Políticas: declarações gerais da administração sobre segurança
+            regras que devem ser seguidas <br>
+            • Padrões: controles de segurança obrigatórios específicos <br>
+            • Procedimentos: instruções passo a passo para implementação
+            os padrões e políticas <br>
+            • Diretrizes: ações recomendadas a seguir </p>
+    </div>
+    <footer>
+        <p>&copy; Flogão</p>
+    </footer>
+    <script src="script.js"></script>
+</div>
+</body>
+</html> 
