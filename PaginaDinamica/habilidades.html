@@ -20,7 +20,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
     <!-- cabeçalho -->
 <body>
-
+  <!-- cabecalho -->
     <script src='http://code.jquery.com/jquery-2.1.3.min.js'></script>
     <script src='//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js'></script>
     <script src="app.js"></script>
@@ -74,7 +74,7 @@
         <h1 class="subtitulo"><strong> O que é Cibersegurança?</strong></h1>
         <p class="paragrafo2">A cibersegurança é uma área de atuação importante dentro da segurança da informação e representa apenas os ativos digitais como a proteção de rede, hardware, software, infraestrutura tecnológica
             e serviços tendo sua atuação direcionada aos dados e protegendo-os contra roubo ou danos, como servidores, dispositivos móveis, redes e aplicativos assim como sistemas da informação.</p>
-        <img class="imagem_conc" src="imagens/img01_conc.JPG" alt="Conceitos" style="float: right">
+        <img class="imagem_conc" src="imagens/img01_conc.jpg" alt="Conceitos" style="float: right">
         <h1 class="subtitulo"><strong> Quais as diferenças com relação à segurança da informação? </strong></h1>
 
         <script>
@@ -85,9 +85,9 @@
         //Pode criar variaveis para usar mais de uma vez
         var imagem1 = "imagens/img11_conc.jpg";
         var imagem2 = "imagens/img12_conc.jpg";
-        var imagem3 = "imagens/img05_conc.jpg";
+        var imagem3 = "imagens/img05_conc.JPG";
 
-        bannerAD[0]="";// ou digitar diretamente em cada item o nome da imagem
+        bannerAD[0]=imagem1;// ou digitar diretamente em cada item o nome da imagem
         bannerADlink[0]="";
         bannerAD[1]=imagem2;
         bannerADlink[1]="";
@@ -124,7 +124,7 @@
         bannerADrotator.filters.revealTrans.play()
         }
         function nextAd(){
-        if(adNum<bannerAD.length-1)adNum++ ;
+        if(adNum<bannerAD.length-2)adNum++ ;
         else adNum=0;
         setTransition();
         document.images.bannerADrotator.src=bannerAD[adNum];
@@ -374,7 +374,7 @@
                 <div class="col aatRow_sp">
                     <button class="btnCargGer btn_menu">
                         <div class="img_aat_menu">
-                            <img id="cargo_img_menu" src="imagens/Gerente.png" alt="funcao">
+                            <img id="cargo_img_menu" src="imagens/gerente.png" alt="funcao">
                         </div>
                         <h2 class="h_menu" id="fun_ger">Gerente</h2>
                     </button>
